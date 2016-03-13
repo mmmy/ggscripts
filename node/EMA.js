@@ -15,9 +15,9 @@ if(data.length < N){
 
 var alpha = 2 / ( N + 1 ),
     K = Math.round(3.45 * ( N + 1 ));
-
+console.log(data,data.length);
 var EMA = 0;
-for(var i=0; i<N; i++){
+for(var i=0; i<K; i++){
 	EMA += alpha * Math.pow((1 - alpha), i) * data[i];
 }
 console.log(EMA);
